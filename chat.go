@@ -7,10 +7,14 @@ import (
 )
 
 // Chat message role defined by the Sensa API.
+
+type ModelName string
+
 const (
-	ChatMessageRoleSystem    = "system"
-	ChatMessageRoleUser      = "user"
-	ChatMessageRoleAssistant = "assistant"
+	ChatMessageRoleUser                = "user"
+	ChatMessageRoleAssistant           = "assistant"
+	NovaPtcXsV1              ModelName = "nova-ptc-xs-v1"
+	NovaPtcXlV1              ModelName = "nova-ptc-xl-v1"
 )
 
 var (
