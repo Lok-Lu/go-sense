@@ -75,7 +75,6 @@ func decodeResponse(body io.Reader, v any) error {
 	}
 
 	if result, ok := v.(*string); ok {
-		fmt.Println(11111)
 		return decodeString(body, result)
 	}
 	return json.NewDecoder(body).Decode(v)

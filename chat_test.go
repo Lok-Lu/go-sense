@@ -14,8 +14,7 @@ func TestClient_CreateChatCompletion(t *testing.T) {
 	client, _ := NewClient(ak, sk)
 
 	req := ChatCompletionRequest{
-		Model:        "nova-ptc-xs-v1",
-		MaxNewTokens: 1024,
+		Model: "nova-ptc-xs-v1",
 		Messages: []ChatCompletionMessage{
 			{
 				Role:    "user",
